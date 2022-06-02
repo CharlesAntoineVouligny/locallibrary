@@ -16,7 +16,7 @@ var app = express();
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var dev_db_url = 'mongodb://localhost:27017/test';
+var dev_db_url = 'mongodb+srv://charles:G@jo8160@cluster0.ziptndy.mongodb.net/?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 
